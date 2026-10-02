@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15">
+  <title>The alert as it appears in Discord</title>
+  <!-- chat background -->
+  <rect width="760" height="300" rx="8" fill="#313338"/>
+
+  <!-- webhook avatar and name -->
+  <circle cx="40" cy="40" r="20" fill="#5865F2"/>
+  <text x="40" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">NF</text>
+  <text x="72" y="36" fill="#f2f3f5" font-weight="600">Notification Forwarder</text>
+  <rect x="236" y="24" width="38" height="16" rx="3" fill="#5865F2"/>
+  <text x="255" y="36" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="700">APP</text>
+  <text x="284" y="36" fill="#949ba4" font-size="12">Today at 14:02</text>
+
+  <!-- content line: level prefix from code + title from the model -->
+  <text x="72" y="62" fill="#dbdee1" font-weight="700">ERROR: payments-api connection pool exhausted</text>
+
+  <!-- embed -->
+  <rect x="72" y="76" width="620" height="204" rx="4" fill="#2b2d31"/>
+  <rect x="72" y="76" width="4" height="204" rx="2" fill="#E74C3C"/>
+
+  <!-- embed title: the kind the model decided -->
+  <text x="92" y="102" fill="#ffffff" font-weight="600">Database connection pool exhausted</text>
+
+  <!-- embed description: the message the model wrote -->
+  <text fill="#dbdee1" font-size="14">
+    <tspan x="92" y="128">payments-api has exhausted its database connection pool. Npgsql reports</tspan>
+    <tspan x="92" y="148">MaxPoolSize is currently 100 and Timeout is currently 15 seconds. This likely</tspan>
+    <tspan x="92" y="168">means database connections are not being returned promptly or demand has</tspan>
+    <tspan x="92" y="188">exceeded pool capacity.</tspan>
+  </text>
+
+  <!-- fields added by code -->
+  <text x="92" y="218" fill="#ffffff" font-size="12" font-weight="700">Level</text>
+  <text x="92" y="236" fill="#dbdee1" font-size="13">Error</text>
+  <text x="212" y="218" fill="#ffffff" font-size="12" font-weight="700">Source</text>
+  <text x="212" y="236" fill="#dbdee1" font-size="13">payments-api</text>
+  <text x="92" y="258" fill="#ffffff" font-size="12" font-weight="700">Notification</text>
+  <text x="92" y="275" fill="#dbdee1" font-size="13">01a0fcfe-65a2-7e50-8fb4-553a26f3032a</text>
+  <text x="680" y="275" text-anchor="end" fill="#949ba4" font-size="12">2026-10-02 14:02 UTC</text>
+</svg>
