@@ -1,0 +1,11 @@
+global using System.Net;
+global using System.Net.Http.Json;
+global using Microsoft.AspNetCore.Mvc;
+global using NotificationForwarder.Api.Notifications.ReceiveNotification.V1;
+global using NotificationForwarder.Application.Notifications.Common.Services;
+global using NotificationForwarder.Domain.Notifications;
+global using NotificationForwarder.IntegrationTests.Utilities;
+global using NotificationForwarder.Tests.Common.Http;
+global using NSubstitute;
+global using Shouldly;
+global using Xunit;

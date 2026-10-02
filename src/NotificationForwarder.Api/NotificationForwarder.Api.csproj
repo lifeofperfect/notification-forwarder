@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>NotificationForwarder.Development</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result.AspNetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../NotificationForwarder.Application/NotificationForwarder.Application.csproj" />
+    <ProjectReference Include="../NotificationForwarder.Infrastructure/NotificationForwarder.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

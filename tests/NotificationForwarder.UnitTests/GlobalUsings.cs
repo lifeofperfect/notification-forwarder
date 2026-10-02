@@ -1,0 +1,16 @@
+global using System.Net;
+global using System.Net.Http.Json;
+global using System.Text.Json;
+global using Microsoft.Extensions.Logging.Abstractions;
+global using Microsoft.Extensions.Options;
+global using Microsoft.Extensions.Time.Testing;
+global using NotificationForwarder.Application.Notifications.Common.Services;
+global using NotificationForwarder.Application.Notifications.Common.Services.Implementation;
+global using NotificationForwarder.Application.Notifications.ReceiveNotification;
+global using NotificationForwarder.Domain.Notifications;
+global using NotificationForwarder.Domain.RateLimiting;
+global using NotificationForwarder.Tests.Common.Http;
+global using NotificationForwarder.UnitTests.Common.Builders;
+global using NSubstitute;
+global using Shouldly;
+global using Xunit;

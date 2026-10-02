@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dependencies": {
+    "net10.0": {
+      "Ardalis.Result.AspNetCore": {
+        "type": "Direct",
+        "requested": "[10.1.0, )",
+        "resolved": "10.1.0",
+        "contentHash": "+S653XCUMXbvVLqMXUVYNjE3Q5y0DLGIrxhxIDaoRwiK0E83czB8UHOBEMRyUgdqEykxQXRFsFUwOKcwKZ2uKw==",
+        "dependencies": {
+          "Ardalis.Result": "10.1.0"
+        }
+      },
+      "notificationforwarder.application": {
+        "type": "Project",
+        "dependencies": {
+          "Ardalis.Result": "[10.1.0, )",
+          "FluentValidation": "[12.1.1, )",
+          "NotificationForwarder.Domain": "[1.0.0, )"
+        }
+      },
+      "notificationforwarder.domain": {
+        "type": "Project"
+      },
+      "notificationforwarder.infrastructure": {
+        "type": "Project",
+        "dependencies": {
+          "NotificationForwarder.Application": "[1.0.0, )"
+        }
+      },
+      "Ardalis.Result": {
+        "type": "CentralTransitive",
+        "requested": "[10.1.0, )",
+        "resolved": "10.1.0",
+        "contentHash": "+WgsXh+JRm0d8BZPlBUc5w0+FTda4vbWRa/IF2q4zDoRsU5BXr8w4rTbYEklZIMNgQQZTcNouR/QfBV5I/4XYQ=="
+      },
+      "FluentValidation": {
+        "type": "CentralTransitive",
+        "requested": "[12.1.1, )",
+        "resolved": "12.1.1",
+        "contentHash": "EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw=="
+      }
+    }
+  }
+}

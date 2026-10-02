@@ -1,0 +1,49 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.{json,yml,yaml,csproj,props,slnx}]
+indent_size = 2
+
+[*.cs]
+dotnet_sort_system_directives_first = true
+# Checked by dotnet format style in CI without requiring XML documentation output.
+dotnet_diagnostic.IDE0005.severity = suggestion
+dotnet_diagnostic.IDE0055.severity = warning
+
+# Explicit diagnostics make these preferences build-enforced.
+csharp_prefer_braces = true
+dotnet_diagnostic.IDE0011.severity = warning
+csharp_style_namespace_declarations = file_scoped
+dotnet_diagnostic.IDE0161.severity = warning
+dotnet_style_require_accessibility_modifiers = for_non_interface_members
+dotnet_diagnostic.IDE0040.severity = warning
+
+dotnet_naming_rule.types_pascal.symbols = types
+dotnet_naming_rule.types_pascal.style = pascal_case
+dotnet_naming_rule.types_pascal.severity = warning
+dotnet_naming_symbols.types.applicable_kinds = class, struct, enum, delegate
+
+dotnet_naming_rule.interfaces_prefix.symbols = interfaces
+dotnet_naming_rule.interfaces_prefix.style = interface_name
+dotnet_naming_rule.interfaces_prefix.severity = warning
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+
+dotnet_naming_rule.members_pascal.symbols = members
+dotnet_naming_rule.members_pascal.style = pascal_case
+dotnet_naming_rule.members_pascal.severity = warning
+dotnet_naming_symbols.members.applicable_kinds = method, property, event
+
+dotnet_naming_styles.pascal_case.capitalization = pascal_case
+dotnet_naming_styles.interface_name.required_prefix = I
+dotnet_naming_styles.interface_name.capitalization = pascal_case
+dotnet_diagnostic.IDE1006.severity = warning
+
+[*.md]
+trim_trailing_whitespace = false

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NotificationForwarder.Domain/NotificationForwarder.Domain.csproj" />
+    <Project Path="src/NotificationForwarder.Application/NotificationForwarder.Application.csproj" />
+    <Project Path="src/NotificationForwarder.Infrastructure/NotificationForwarder.Infrastructure.csproj" />
+    <Project Path="src/NotificationForwarder.Api/NotificationForwarder.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/NotificationForwarder.UnitTests/NotificationForwarder.UnitTests.csproj" />
+    <Project Path="tests/NotificationForwarder.IntegrationTests/NotificationForwarder.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
